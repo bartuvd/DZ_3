@@ -21,13 +21,19 @@ print(result) # [5, 1]
 '''
 
 import random
-numbers = [1, 2, 3, 4, 5]
+#numbers = [1, 2, 3, 4, 5]
 
-result = random.sample(numbers, 2)
+#result = random.sample(numbers, 2)
 
-print(result)
+#print(result)
 
-dict_people = {'Иван':'12.12.1985', 'Дима':'14.06.1990', 'Саша':'30.08.1991',
-               'Петя':'10.01.1988', 'Таня':'09.09.1989', 'Маша':'25.11.1987',
-               'Света':'23.07.1981', 'Даша':'14.12.1982', 'Степа':'12.08.1987',
-               'Аня':}
+list_people = ['Иван', 'Дима', 'Саша', 'Петя', 'Таня', 'Маша',
+               'Света', 'Даша', 'Степа', 'Аня']
+
+victory = random.sample(list_people, 5)
+
+for people in victory:
+    print(input('Введите имя: ', people[0]))
+    #print(input_dety, people[0])
+    #if input_dety
+    print(people)
